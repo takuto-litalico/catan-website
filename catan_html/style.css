@@ -1,0 +1,54 @@
+/*共通設定*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/*共通設定*/
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+main{
+    height: 100%;
+    background-color: white;
+}
+main > div{
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, calc(100%/12)));
+    grid-template-rows: repeat(12, minmax(0, calc(100%/12)));
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.firstplace{
+    grid-column: 2 / 12;
+    grid-row: 2 / 3;
+}
+.secondplace{
+    grid-column: 2 / 12;
+    grid-row: 3 / 4;   
+}
+.thirdplace{
+    grid-column: 2 / 12;
+    grid-row: 4 / 5;
+}
+.fourthplace{
+    grid-column: 2 / 12;
+    grid-row: 5 / 6;
+}
+.fifthplace{
+    grid-column: 2 / 12;
+    grid-row: 6 / 7;
+}
+.sixthplace{
+    grid-column: 2 / 12;
+    grid-row: 7 / 8;
+}
+.ifexpan{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
